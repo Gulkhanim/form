@@ -7,6 +7,8 @@ const personProfileInfo = createContext({})
   const [name, setName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
+  const [biography, setBiography] = useState('')
+  const [img, setImg] = useState('')
 
   const values = {
     name,
@@ -14,7 +16,11 @@ const personProfileInfo = createContext({})
     lastName,
     setLastName,
     email,
-    setEmail
+    setEmail,
+    biography,
+    setBiography,
+    img,
+    setImg
     
   }
     return <personProfileInfo.Provider value={values}>
